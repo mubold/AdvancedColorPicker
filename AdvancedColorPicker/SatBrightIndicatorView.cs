@@ -22,8 +22,8 @@
 */
 
 using System;
-using MonoTouch.UIKit;
-using MonoTouch.CoreGraphics;
+using UIKit;
+using CoreGraphics;
 using System.Drawing;
 
 namespace AdvancedColorPicker
@@ -38,12 +38,12 @@ namespace AdvancedColorPicker
 		}
 
 
-		public override void Draw (RectangleF rect)
+      public override void Draw (CGRect rect)
 		{
 			base.Draw (rect);
 
 			float margins = 4;
-			RectangleF drawRect = new RectangleF(rect.X + margins, rect.Y + margins, rect.Width - margins*2, rect.Height - margins*2);
+			var drawRect = new CGRect(rect.X + margins, rect.Y + margins, rect.Width - margins*2, rect.Height - margins*2);
 
 			CGContext context = UIGraphics.GetCurrentContext();
 			context.AddEllipseInRect(drawRect);

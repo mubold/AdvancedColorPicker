@@ -1,24 +1,32 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedColorPickerDemo", "AdvancedColorPickerDemo\AdvancedColorPickerDemo.csproj", "{35183A50-D9CD-4D32-A46C-2FA58A81E78B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedColorPicker", "AdvancedColorPicker\AdvancedColorPicker.csproj", "{AC4519F9-F624-4562-8E36-23B22C1E92D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|iPhoneSimulator = Debug|iPhoneSimulator
-		Release|iPhoneSimulator = Release|iPhoneSimulator
-		Debug|iPhone = Debug|iPhone
-		Release|iPhone = Release|iPhone
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
 		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Debug|iPhone.Build.0 = Debug|iPhone
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
@@ -29,8 +37,12 @@ Global
 		{35183A50-D9CD-4D32-A46C-2FA58A81E78B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
@@ -39,6 +51,9 @@ Global
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Release|iPhone.Build.0 = Release|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{AC4519F9-F624-4562-8E36-23B22C1E92D9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = AdvancedColorPickerDemo\AdvancedColorPickerDemo.csproj

@@ -22,8 +22,8 @@
 */
 
 using System;
-using MonoTouch.UIKit;
-using MonoTouch.CoreGraphics;
+using UIKit;
+using CoreGraphics;
 using System.Drawing;
 
 namespace AdvancedColorPicker
@@ -37,36 +37,34 @@ namespace AdvancedColorPicker
 
 		public HuePickerView huePickerViewRef;
 
-		public override void Draw (System.Drawing.RectangleF rect)
-		{
-			base.Draw (rect);
+      public override void Draw(CGRect rect)
+      {
+         base.Draw (rect);
 
-			CGContext context = UIGraphics.GetCurrentContext();
+         CGContext context = UIGraphics.GetCurrentContext();
 
-			float indicatorLength = rect.Size.Height / 3;
+         float indicatorLength = (float)rect.Size.Height / 3;
 
-			context.SetFillColor(UIColor.Black.CGColor);
-			context.SetStrokeColor(UIColor.White.CGColor);
-			context.SetLineWidth(0.5f);
-			context.SetShadow(new SizeF(0,0),4);
+         context.SetFillColor(UIColor.Black.CGColor);
+         context.SetStrokeColor(UIColor.White.CGColor);
+         context.SetLineWidth(0.5f);
+         context.SetShadow(new SizeF(0,0),4);
 
-			float pos = rect.Width / 2;
+         float pos = (float)rect.Width / 2;
 
-			context.MoveTo(pos - (indicatorLength/2), -1);
-			context.AddLineToPoint(pos+(indicatorLength/2), -1);
-			context.AddLineToPoint(pos, indicatorLength);
-			context.AddLineToPoint(pos-(indicatorLength/2), -1);
+         context.MoveTo(pos - (indicatorLength/2), -1);
+         context.AddLineToPoint(pos+(indicatorLength/2), -1);
+         context.AddLineToPoint(pos, indicatorLength);
+         context.AddLineToPoint(pos-(indicatorLength/2), -1);
 
-			context.MoveTo(pos-(indicatorLength/2), rect.Size.Height+1);
-			context.AddLineToPoint(pos+(indicatorLength/2), rect.Size.Height+1);
-			context.AddLineToPoint(pos, rect.Size.Height-indicatorLength);
-			context.AddLineToPoint(pos-(indicatorLength/2), rect.Size.Height+1);
+         context.MoveTo(pos-(indicatorLength/2), rect.Size.Height+1);
+         context.AddLineToPoint(pos+(indicatorLength/2), rect.Size.Height+1);
+         context.AddLineToPoint(pos, rect.Size.Height-indicatorLength);
+         context.AddLineToPoint(pos-(indicatorLength/2), rect.Size.Height+1);
 
-			context.ClosePath();
-			context.DrawPath(CGPathDrawingMode.FillStroke); 
-		}
-
-
+         context.ClosePath();
+         context.DrawPath(CGPathDrawingMode.FillStroke); 
+      }
 	}
 }
 
